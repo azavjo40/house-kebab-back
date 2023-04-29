@@ -1,18 +1,33 @@
+// module.exports = ({ env }) => ({
+//   defaultConnection: 'default',
+//   connections: {
+//     default: {
+//       connector: 'bookshelf',
+//       settings: {
+//         client: 'postgres',
+//         host: env('DATABASE_HOST', 'localhost'),
+//         port: env.int('DATABASE_PORT', 5432),
+//         database: env('DATABASE_NAME', 'strapi3'),
+//         username: env('DATABASE_USERNAME', undefined),
+//         password: env('DATABASE_PASSWORD', undefined),
+//         ssl: env.bool('DATABASE_SSL', false),
+//       },
+//       options: {}
+//     },
+//   },
+// });
+
 module.exports = ({ env }) => ({
   defaultConnection: 'default',
   connections: {
     default: {
-      connector: 'bookshelf',
+      connector: 'mongoose',
       settings: {
-        client: 'postgres',
-        host: env('DATABASE_HOST', 'localhost'),
-        port: env.int('DATABASE_PORT', 5432),
-        database: env('DATABASE_NAME', 'strapi3'),
-        username: env('DATABASE_USERNAME', undefined),
-        password: env('DATABASE_PASSWORD', undefined),
-        ssl: env.bool('DATABASE_SSL', false),
+        uri: env('DATABASE_URI'),
       },
-      options: {}
+      options: {
+        ssl: true,
+      },
     },
   },
 });
