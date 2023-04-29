@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "additions",
+  "info": {
+    "name": "Addition",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "product": {
+      "via": "additions",
+      "model": "product"
+    },
+    "cost": {
+      "type": "decimal",
+      "required": true
+    },
+    "isChoosed": {
+      "type": "boolean",
+      "required": true
+    }
+  }
+}
