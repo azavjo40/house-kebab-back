@@ -23,7 +23,7 @@ module.exports = ({ env }) => ({
     default: {
       connector: 'mongoose',
       settings: {
-        uri: env('DATABASE_URI'),
+        uri: env('DATABASE_URI', "mongodb+srv://strapi:Strapi123!@cluster0.mogbyxa.mongodb.net/test"),
       },
       options: {
         ssl: true,
