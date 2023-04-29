@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "sizes",
+  "collectionName": "free_sauces",
   "info": {
-    "name": "Size",
-    "description": ""
+    "name": "Free-sauces"
   },
   "options": {
     "increments": true,
@@ -16,12 +15,8 @@
       "type": "string",
       "required": true
     },
-    "cost": {
-      "type": "decimal",
-      "required": true
-    },
     "products": {
-      "via": "sizes",
+      "via": "free_sauces",
       "collection": "product"
     }
   }
