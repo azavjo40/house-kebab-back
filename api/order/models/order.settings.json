@@ -27,8 +27,12 @@
     },
     "order": {
       "type": "component",
-      "repeatable": false,
+      "repeatable": true,
       "component": "order.order"
+    },
+    "clientPhone": {
+      "type": "string",
+      "required": true
     }
   }
 }
