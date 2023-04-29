@@ -1,0 +1,9 @@
+{
+  "collectionName": "components_order_orders",
+  "info": {
+    "name": "order",
+    "icon": "cart-plus"
+  },
+  "options": {},
+  "attributes": {}
+}
