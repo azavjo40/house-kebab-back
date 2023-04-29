@@ -23,10 +23,6 @@
       "via": "product",
       "model": "category"
     },
-    "additions": {
-      "via": "product",
-      "collection": "addition"
-    },
     "cost": {
       "type": "decimal",
       "required": true
@@ -42,6 +38,15 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "additions": {
+      "via": "products",
+      "collection": "addition"
+    },
+    "sizes": {
+      "collection": "size",
+      "via": "products",
+      "dominant": true
     }
   }
 }
