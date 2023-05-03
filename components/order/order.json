@@ -13,7 +13,7 @@
     },
     "sauce": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "count": {
       "type": "integer",

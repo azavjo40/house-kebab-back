@@ -33,6 +33,10 @@
     "orderMethod": {
       "type": "string",
       "required": true
+    },
+    "payMethod": {
+      "type": "string",
+      "required": true
     }
   }
 }

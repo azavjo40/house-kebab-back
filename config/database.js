@@ -1,3 +1,20 @@
+// if mongodb 
+module.exports = ({ env }) => ({
+  defaultConnection: 'default',
+  connections: {
+    default: {
+      connector: 'mongoose',
+      settings: {
+        uri: env('DATABASE_URI'),
+      },
+      options: {
+        ssl: true,
+      },
+    },
+  },
+});
+
+//ifpostgres Database
 // module.exports = ({ env }) => ({
 //   defaultConnection: 'default',
 //   connections: {
@@ -16,18 +33,3 @@
 //     },
 //   },
 // });
-
-module.exports = ({ env }) => ({
-  defaultConnection: 'default',
-  connections: {
-    default: {
-      connector: 'mongoose',
-      settings: {
-        uri: env('DATABASE_URI'),
-      },
-      options: {
-        ssl: true,
-      },
-    },
-  },
-});
