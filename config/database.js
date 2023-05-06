@@ -5,7 +5,7 @@
 //     default: {
 //       connector: 'mongoose',
 //       settings: {
-//         uri: env('DATABASE_URI'),
+//         uri: env('DATABASE_URL'),
 //       },
 //       options: {
 //         ssl: true,
@@ -14,7 +14,7 @@
 //   },
 // });
 
-//ifpostgres Database
+// if postgres Database
 module.exports = ({ env }) => ({
   defaultConnection: 'default',
   connections: {
