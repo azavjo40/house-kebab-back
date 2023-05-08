@@ -20,7 +20,7 @@
       "required": true
     },
     "category": {
-      "via": "product",
+      "via": "products",
       "model": "category"
     },
     "cost": {
