@@ -33,6 +33,20 @@
     "clientPhone": {
       "type": "string",
       "required": true
+    },
+    "minutes": {
+      "type": "string",
+      "default": "20",
+      "required": false
+    },
+    "isConfirmed": {
+      "type": "boolean",
+      "default": false,
+      "required": false
+    },
+    "isDelivered": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
