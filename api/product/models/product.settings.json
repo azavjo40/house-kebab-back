@@ -52,6 +52,10 @@
       "collection": "free-sauces",
       "via": "products",
       "dominant": true
+    },
+    "meats": {
+      "via": "products",
+      "collection": "meat"
     }
   }
 }
