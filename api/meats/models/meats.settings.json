@@ -2,8 +2,7 @@
   "kind": "collectionType",
   "collectionName": "meats",
   "info": {
-    "name": "meat",
-    "description": ""
+    "name": "Meats"
   },
   "options": {
     "increments": true,
@@ -12,13 +11,12 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "products": {
-      "collection": "product",
-      "via": "meats",
-      "dominant": true
-    },
     "meat": {
       "type": "string"
+    },
+    "products": {
+      "via": "meats",
+      "collection": "product"
     }
   }
 }

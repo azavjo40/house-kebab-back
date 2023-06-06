@@ -3,7 +3,7 @@
     {
       "method": "GET",
       "path": "/meats",
-      "handler": "meat.find",
+      "handler": "meats.find",
       "config": {
         "policies": []
       }
@@ -11,7 +11,7 @@
     {
       "method": "GET",
       "path": "/meats/count",
-      "handler": "meat.count",
+      "handler": "meats.count",
       "config": {
         "policies": []
       }
@@ -19,7 +19,7 @@
     {
       "method": "GET",
       "path": "/meats/:id",
-      "handler": "meat.findOne",
+      "handler": "meats.findOne",
       "config": {
         "policies": []
       }
@@ -27,7 +27,7 @@
     {
       "method": "POST",
       "path": "/meats",
-      "handler": "meat.create",
+      "handler": "meats.create",
       "config": {
         "policies": []
       }
@@ -35,7 +35,7 @@
     {
       "method": "PUT",
       "path": "/meats/:id",
-      "handler": "meat.update",
+      "handler": "meats.update",
       "config": {
         "policies": []
       }
@@ -43,7 +43,7 @@
     {
       "method": "DELETE",
       "path": "/meats/:id",
-      "handler": "meat.delete",
+      "handler": "meats.delete",
       "config": {
         "policies": []
       }

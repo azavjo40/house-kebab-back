@@ -54,8 +54,9 @@
       "dominant": true
     },
     "meats": {
+      "collection": "meats",
       "via": "products",
-      "collection": "meat"
+      "dominant": true
     }
   }
 }
