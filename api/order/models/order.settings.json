@@ -47,6 +47,9 @@
     "isDelivered": {
       "type": "boolean",
       "default": false
+    },
+    "disstance": {
+      "type": "decimal"
     }
   }
 }

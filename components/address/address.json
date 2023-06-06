@@ -37,6 +37,9 @@
     "payMethod": {
       "type": "string",
       "required": true
+    },
+    "disstance": {
+      "type": "decimal"
     }
   }
 }
