@@ -50,6 +50,10 @@
     },
     "disstance": {
       "type": "decimal"
+    },
+    "payDelivery": {
+      "type": "decimal",
+      "default": 0
     }
   }
 }
