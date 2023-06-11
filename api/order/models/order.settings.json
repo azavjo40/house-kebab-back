@@ -39,11 +39,6 @@
       "default": "20",
       "required": false
     },
-    "isConfirmed": {
-      "type": "boolean",
-      "default": false,
-      "required": false
-    },
     "isDelivered": {
       "type": "boolean",
       "default": false
@@ -54,6 +49,10 @@
     "payDelivery": {
       "type": "decimal",
       "default": 0
+    },
+    "statusOrder": {
+      "type": "string",
+      "default": "Nie potwierdzony"
     }
   }
 }
